@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Coffee Paradise - Our Story</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-hero {
+            height: 400px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .about-section {
+            padding: 100px 10%;
+            background: #fff;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 20px 20px 0px #e67e22;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 10%;
+            background: #2c1b10;
+            color: white;
+            text-align: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .stat-item h2 {
+            font-size: 2.5rem;
+            color: #e67e22;
+        }
+
+        .mission-vision {
+            padding: 100px 10%;
+            background: #fdfaf7;
+        }
+
+        .mv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .mv-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-bottom: 5px solid #e67e22;
+        }
+
+        .founder-section {
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        .founder-card {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 30px;
+            position: relative;
+        }
+
+        .founder-quote {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit;">Coffee<span>Paradise</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">Our Story</a></li>
+            <li><a href="menu.html">Full Menu</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <header class="about-hero">
+        <div>
+            <h1 style="font-family: 'Playfair Display', serif; font-size: 3.5rem;">Discover Our Journey</h1>
+            <p style="letter-spacing: 3px; text-transform: uppercase; color: #e67e22; font-weight: 600;">Since 2026</p>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2 style="font-size: 2.5rem; color: #2c1b10; margin-bottom: 25px;">More Than Just a <br><span>Cup of
+                        Coffee</span></h2>
+                <p style="line-height: 1.8; color: #555; margin-bottom: 20px;">
+                    Founded by <b>Md. Mohaiminul Islam Zim</b>, Coffee Paradise was born out of a pure passion for the
+                    perfect roast. What started as a small dream to serve the best coffee in the neighborhood has now
+                    evolved into a community for coffee lovers.
+                </p>
+                <p style="line-height: 1.8; color: #555;">
+                    We travel to the most remote corners of the world to find ethically sourced, 100% organic beans. Our
+                    master roasters then bring out the unique character of each bean, ensuring that every cup you hold
+                    is a masterpiece of flavor and aroma.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="https://images.pexels.com/photos/1239422/pexels-photo-1239422.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Our Shop">
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-container">
+        <div class="stat-item">
+            <h2>12+</h2>
+            <p>Signature Blends</p>
+        </div>
+        <div class="stat-item">
+            <h2>500+</h2>
+            <p>Daily Happy Clients</p>
+        </div>
+        <div class="stat-item">
+            <h2>05+</h2>
+            <p>Expert Baristas</p>
+        </div>
+        <div class="stat-item">
+            <h2>100%</h2>
+            <p>Organic Sourced</p>
+        </div>
+    </section>
+
+    <section class="mission-vision">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h2 style="font-size: 2.5rem; color: #2c1b10;">Our <span>Philosophy</span></h2>
+        </div>
+        <div class="mv-grid">
+            <div class="mv-card">
+                <h3 style="margin-bottom: 15px; color: #e67e22;">Our Mission</h3>
+                <p style="color: #666; line-height: 1.6;">To elevate the daily coffee ritual into an extraordinary
+                    experience through craftsmanship, quality, and community spirit.</p>
+            </div>
+            <div class="mv-card">
+                <h3 style="margin-bottom: 15px; color: #e67e22;">Our Vision</h3>
+                <p style="color: #666; line-height: 1.6;">To become the world's most trusted specialty coffee brand,
+                    known for our commitment to sustainability and the art of brewing.</p>
+            </div>
+            <div class="mv-card">
+                <h3 style="margin-bottom: 15px; color: #e67e22;">Our Values</h3>
+                <p style="color: #666; line-height: 1.6;">Integrity in sourcing, excellence in every pour, and creating
+                    a space where everyone feels like they belong.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="founder-section">
+        <h2 style="margin-bottom: 50px;">A Word From <span>Our Founder</span></h2>
+        <div class="founder-card">
+            <p class="founder-quote">"I believe that a lot can happen over a great cup of coffee. It’s not just a drink;
+                it's an invitation to connect, to dream, and to fuel your day's ambition. At Coffee Paradise, we don't
+                just sell coffee, we serve inspiration."</p>
+            <h4 style="color: #2c1b10; font-size: 1.2rem;">- Md. Mohaiminul Islam Zim</h4>
+            <p style="color: #e67e22; font-weight: 600;">Founder & CEO</p>
+        </div>
+    </section>
+
+    <footer style="background: #2c1b10; color: white; padding: 60px 10% 20px; text-align: center;">
+        <div
+            style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; margin-bottom: 40px; text-align: left;">
+            <div style="flex: 1; min-width: 200px;">
+                <h3 style="color: #e67e22; margin-bottom: 20px;">Coffee Paradise</h3>
+                <p style="color: #bbb; line-height: 1.6;">Bringing you the finest coffee experiences since 2026. Join
+                    our community and stay updated.</p>
+            </div>
+            <div style="flex: 1; min-width: 200px;">
+                <h3 style="color: #e67e22; margin-bottom: 20px;">Quick Links</h3>
+                <ul style="list-style: none; padding: 0; color: #bbb;">
+                    <li><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></li>
+                    <li><a href="menu.html" style="color: inherit; text-decoration: none;">Menu</a></li>
+                    <li><a href="contact.html" style="color: inherit; text-decoration: none;">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border: 0; border-top: 1px solid #444; margin-bottom: 20px;">
+        <p>&copy; 2026 Coffee Paradise. All Rights Reserved.</p>
+        <p style="margin-top: 10px;">Designed and Developed with ❤️ by <b>Md. Mohaiminul Islam Zim</b></p>
+    </footer>
+
+</body>
+
+</html>

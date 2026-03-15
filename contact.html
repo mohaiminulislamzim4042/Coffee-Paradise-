@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Coffee Paradise - Get In Touch</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-hero {
+            height: 350px;
+            background: linear-gradient(rgba(44, 27, 16, 0.85), rgba(44, 27, 16, 0.85)), url('https://images.pexels.com/photos/331107/pexels-photo-331107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .contact-container {
+            padding: 80px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+            background: #fdfaf7;
+        }
+
+        .contact-info-card {
+            background: #2c1b10;
+            color: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-item {
+            margin-bottom: 35px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .info-item h4 {
+            color: #e67e22;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .info-item p {
+            color: #bbb;
+        }
+
+        .contact-form-wrapper {
+            background: #fff;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c1b10;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            background: #f9f9f9;
+            font-family: inherit;
+        }
+
+        .social-links {
+            margin-top: 40px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-btn {
+            width: 45px;
+            height: 45px;
+            background: rgba(230, 126, 34, 0.2);
+            color: #e67e22;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .social-btn:hover {
+            background: #e67e22;
+            color: white;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit;">Coffee<span>Paradise</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="menu.html">Full Menu</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="contact-hero">
+        <div>
+            <h1 style="font-family: 'Playfair Display', serif; font-size: 3rem;">Get In Touch</h1>
+            <p style="color: #e67e22; letter-spacing: 2px;">WE ARE HERE TO HEAR FROM YOU</p>
+        </div>
+    </header>
+
+    <section class="contact-container">
+        <div class="contact-info-card">
+            <h2 style="font-size: 2rem; margin-bottom: 30px;">Contact Information</h2>
+            <p style="color: #bbb; margin-bottom: 40px;">Have questions about our beans or want to book a table? Feel
+                free to reach out to us anytime.</p>
+
+            <div class="info-item">
+                <div style="font-size: 25px;">📍</div>
+                <div>
+                    <h4>Our Location</h4>
+                    <p>123 Coffee Street, Rangpur City, Bangladesh</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div style="font-size: 25px;">📞</div>
+                <div>
+                    <h4>Call Us</h4>
+                    <p>+880 1XXXXXXXXX</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div style="font-size: 25px;">✉️</div>
+                <div>
+                    <h4>Email Us</h4>
+                    <p>zim.dev@example.com</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="social-btn">Fb</a>
+                <a href="#" class="social-btn">Ig</a>
+                <a href="#" class="social-btn">Tw</a>
+                <a href="#" class="social-btn">Li</a>
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <h2 style="color: #2c1b10; margin-bottom: 30px;">Send Us a Message</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label>Your Full Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="How can we help?">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; padding: 18px; font-size: 1.1rem;">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer style="background: #2c1b10; color: white; padding: 60px 10% 20px; text-align: center;">
+        <div
+            style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; margin-bottom: 40px; text-align: left;">
+            <div style="flex: 1; min-width: 200px;">
+                <h3 style="color: #e67e22; margin-bottom: 20px;">Coffee Paradise</h3>
+                <p style="color: #bbb; line-height: 1.6;">Bringing you the finest coffee experiences since 2026. Join
+                    our community and stay updated.</p>
+            </div>
+            <div style="flex: 1; min-width: 200px;">
+                <h3 style="color: #e67e22; margin-bottom: 20px;">Quick Links</h3>
+                <ul style="list-style: none; padding: 0; color: #bbb;">
+                    <li><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></li>
+                    <li><a href="menu.html" style="color: inherit; text-decoration: none;">Menu</a></li>
+                    <li><a href="about.html" style="color: inherit; text-decoration: none;">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border: 0; border-top: 1px solid #444; margin-bottom: 20px;">
+        <p>&copy; 2026 Coffee Paradise. All Rights Reserved.</p>
+        <p style="margin-top: 10px;">Designed and Developed with ❤️ by <b>Md. Mohaiminul Islam Zim</b></p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').onsubmit = function (e) {
+            e.preventDefault();
+            alert('Allah Bharosa! Your message has been sent successfully. Zim will contact you soon.');
+            this.reset();
+        }
+    </script>
+
+</body>
+
+</html>
